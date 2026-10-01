@@ -1,0 +1,1 @@
+package pe.edu.utec.labreserve.exception; public class ForbiddenStoreActionException extends RuntimeException{public ForbiddenStoreActionException(){super("Forbidden store action");} public ForbiddenStoreActionException(String m){super(m);}}

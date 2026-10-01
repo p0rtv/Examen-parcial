@@ -1,0 +1,2 @@
+package pe.edu.utec.labreserve.event;
+import org.springframework.context.ApplicationEventPublisher; import org.springframework.stereotype.Component; @Component public class OrderConfirmedEventPublisher{private final ApplicationEventPublisher publisher; public OrderConfirmedEventPublisher(ApplicationEventPublisher publisher){this.publisher=publisher;} public void publish(Long id,Long customerId,java.math.BigDecimal total){publisher.publishEvent(new OrderConfirmedEvent(id,customerId,total));}}

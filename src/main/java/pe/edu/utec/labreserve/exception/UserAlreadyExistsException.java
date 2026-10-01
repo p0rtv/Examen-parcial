@@ -1,0 +1,1 @@
+package pe.edu.utec.labreserve.exception; public class UserAlreadyExistsException extends RuntimeException{public UserAlreadyExistsException(){super("User already exists");} public UserAlreadyExistsException(String m){super(m);}}

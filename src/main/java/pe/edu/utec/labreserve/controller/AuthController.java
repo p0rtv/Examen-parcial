@@ -1,0 +1,3 @@
+package pe.edu.utec.labreserve.controller;
+import jakarta.validation.Valid; import org.springframework.http.*; import org.springframework.web.bind.annotation.*; import pe.edu.utec.labreserve.dto.request.*; import pe.edu.utec.labreserve.dto.response.*; import pe.edu.utec.labreserve.service.AuthService;
+@RestController @RequestMapping("/auth") public class AuthController{private final AuthService service; public AuthController(AuthService service){this.service=service;} @PostMapping("/register") public ResponseEntity<RegisterResponseDto> register(@Valid @RequestBody RegisterRequestDto r){return ResponseEntity.status(201).body(service.register(r));} @PostMapping("/login") public LoginResponseDto login(@Valid @RequestBody LoginRequestDto r){return service.login(r);}}

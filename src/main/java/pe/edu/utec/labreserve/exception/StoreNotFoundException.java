@@ -1,0 +1,1 @@
+package pe.edu.utec.labreserve.exception; public class StoreNotFoundException extends RuntimeException{public StoreNotFoundException(){super("Store not found");} public StoreNotFoundException(String m){super(m);}}

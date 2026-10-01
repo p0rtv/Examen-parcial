@@ -1,0 +1,1 @@
+package pe.edu.utec.labreserve.exception; public class ProductNotAvailableException extends RuntimeException{public ProductNotAvailableException(){super("Product or store not available");} public ProductNotAvailableException(String m){super(m);}}

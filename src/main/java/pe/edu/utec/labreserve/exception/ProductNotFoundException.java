@@ -1,0 +1,1 @@
+package pe.edu.utec.labreserve.exception; public class ProductNotFoundException extends RuntimeException{public ProductNotFoundException(){super("Product not found");} public ProductNotFoundException(String m){super(m);}}
